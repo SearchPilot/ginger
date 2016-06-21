@@ -1,0 +1,11 @@
+*.sublime-project
+*.sublime-workspace
+.venv
+*.pyc
+*.sqlite3
+node_modules
+static-source/bower_components
+static-source/tmp
+*.css.map
+pkg/
+static_collect_root
