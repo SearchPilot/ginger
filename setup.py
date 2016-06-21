@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='ginger',
-      version="0.0.3",
+      version="0.0.4",
       packages=find_packages(),
       description='A very lightweight static site generator',
       url='https://github.com/DistilledLtd/ginger',

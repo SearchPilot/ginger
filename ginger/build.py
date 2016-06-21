@@ -175,7 +175,8 @@ def build():
         context.update({
             'css_file_name': css_file_name,
             'js_file_names': js_file_names,
-            'pages': pages_meta
+            'pages': pages_meta,
+            'meta': meta
         })
 
         template = env.get_template(meta.get('template', settings.default_template))
