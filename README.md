@@ -15,15 +15,15 @@ Installation
 pip install ginger
 ```
 
-Usage
------
+Initial Setup
+---------------
 
-mkdir `root_dir`
-mkdir `root_dir/input`
-mkdir `root_dir/input/templates`
-mkdir `root_dir/input/templates/styles`
-mkdir `root_dir/input/templates/scripts`
-mkdir `root_dir/output`
+- mkdir `root_dir`
+- mkdir `root_dir/input`
+- mkdir `root_dir/input/templates`
+- mkdir `root_dir/input/templates/styles`
+- mkdir `root_dir/input/templates/scripts`
+- mkdir `root_dir/output`
 
 Then create ginger.yml with the following settings
 
