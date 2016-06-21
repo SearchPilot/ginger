@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='ginger',
-      version="0.0.1",
+      version="0.0.3",
       packages=find_packages(),
       description='A very lightweight static site generator',
       url='https://github.com/DistilledLtd/ginger',
@@ -10,7 +10,7 @@ setup(name='ginger',
       install_requires=['csscompressor', 'Jinja2', 'jsmin', 'libsass', 'PyYAML', 'watchdog', ],
       entry_points={
           'console_scripts': [
-              'ginger = ginger.__main__:ginger'
+              'ginger = ginger.__main__:ginger',
           ]
       },
       )

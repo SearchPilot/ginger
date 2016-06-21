@@ -7,16 +7,19 @@ import sys
 import time
 
 from csscompressor import compress
-from jinja2 import Environment, PackageLoader
+from jinja2 import Environment, FileSystemLoader
 from jsmin import jsmin
 import sass
 import yaml
 
 from .conf import args, settings
 
-
-env = Environment(loader=PackageLoader(settings.input_dir,
-                                       settings.templates_dir))
+os.chdir(os.getcwd())
+loader = FileSystemLoader(os.path.join(os.getcwd(),
+                                       settings.input_dir,
+                                       settings.templates_dir
+                                       ))
+env = Environment(loader=loader)
 
 
 def make_path(parts):
