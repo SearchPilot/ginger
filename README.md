@@ -1,7 +1,7 @@
 Ginger Static Site Generator
 ============================
 
-Ginger is an very lightweight static site generator based on the [jinja template language](http://jinja.pocoo.org/). 
+Ginger is a very lightweight static site generator based on the [jinja template language](http://jinja.pocoo.org/). 
 
 Unlike most static site generators Ginger is designed to work best for sites that are made up from a collection of pages. Ginger does not have the concept of blog posts, tags, categories, authors. If you need something more complicated then [Pelican](http://blog.getpelican.com/) is an obvious next step. 
 
