@@ -118,7 +118,7 @@ def get_input_pages():
     content_dir = make_path([settings.input_dir, settings.content_dir])
     for folder, sub_dirs, files in os.walk(content_dir):
         for yaml_file in files:
-            if os.path.isfile(folder + os.path.sep + yaml_file):
+            if os.path.isfile(folder + os.path.sep + yaml_file) and not yaml_file.startswith('.'):
                 with open(folder + os.path.sep + yaml_file) as file:
                     data = yaml.load(file)
                     pages.append(data)
